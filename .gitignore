@@ -40,6 +40,9 @@ menus/*
 micro/
 micro/*
 
+nvim/
+nvim/*
+
 plugins-nvim/
 plugins-nvim/*
 

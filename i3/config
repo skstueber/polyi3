@@ -82,6 +82,9 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec st ; exec --no-startup-id ~/.config/i3/scripts/move-cursor-to-focused
 
+# floating terminal
+bindsym $mod+Shift+Return exec st -c "floating" ; exec --no-startup-id ~/.config/i3/scripts/move-cursor-to-focused
+
 # notes binding
 bindsym $mod+n exec --no-startup-id ~/.config/i3/scripts/notes.sh
 
@@ -91,8 +94,17 @@ bindsym $mod+p exec --no-startup-id ~/.config/i3/scripts/kill.sh
 # killall quick bind
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/killall.sh 
 
+# copy histoty quick bind
+bindsym $mod+c exec copy add
+
+# select history quick bind
+bindsym $mod+v exec copy sel
+
+# clear copy history
+bindsym $mod+Shift+c exec copy clear
+
 for_window [class="floating"] floating enable
-for_window [class="floating"] resize set 1500 1000
+for_window [class="floating"] resize set 1200 700
 for_window [class="floating"] move position center
 
 # i3lock
@@ -140,10 +152,10 @@ bindsym $mod+Shift+Up move up ; exec --no-startup-id ~/.config/i3/scripts/move-c
 bindsym $mod+Shift+Right move right ; exec --no-startup-id ~/.config/i3/scripts/move-cursor-to-focused
 
 # split in horizontal orientation
-bindsym $mod+p split h
+bindsym $mod+o split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+b split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+Shift+f fullscreen toggle
@@ -221,8 +233,6 @@ client.urgent           $urgent_bg  $urgent_bg  $text            $indicator     
 # getting rid of the title bar of windows
 default_border pixel 2  
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
