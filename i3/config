@@ -107,8 +107,8 @@ for_window [class="floating"] floating enable
 for_window [class="floating"] resize set 1200 700
 for_window [class="floating"] move position center
 
-# i3lock
-bindsym $mod+Control+l exec ~/.config/i3/scripts/lock.sh
+# toggle between tiling and floating
+bindsym $mod+Control+f focus mode_toggle
 
 # Exit i3 (logs you out of your X session)
 bindsym $mod+Control+Shift+e exec --no-startup-id ~/.config/i3/scripts/dmenu_prompt "Please close all processes before exiting. Are you absolutely certain you want to exit?" "i3-msg exit"
