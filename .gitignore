@@ -55,6 +55,11 @@ systemd/*
 unity3d/
 unity3d/*
 
+scripts/
+scripts/*
+i3/scripts/
+i3/scripts/*
+
 cachyos-hello.json
 QtProject.conf
 user-dirs.dirs
