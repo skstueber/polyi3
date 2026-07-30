@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-XIDLEHOOK_SOCK=%t/xidlehook.socket
-exec xidlehook --not-when-audio --not-when-fullscreen --socket $XIDLEHOOK_SOCK --timer 240 '~/.config/i3/scripts/lock.sh' '' --timer 500 'systemctl suspend' ''
-
