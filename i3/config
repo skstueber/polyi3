@@ -43,7 +43,7 @@ exec_always --no-startup-id setxkbmap -layout us,de -option 'grp:alt_space_toggl
 # exec --no-startup-id nm-applet
 
 # Autotiling:
-exec_always --no-startup-id /home/skstueber/.config/i3/scripts/autotiling-1.9.3/autotiling/main.py -w 1 2 3 4 5
+exec_always --no-startup-id /home/skstueber/.config/i3/scripts/autotiling/autotiling/main.py -w 1 2 3 4 5
 
 # Idle screen:
 # exec_always --no-startup-id ~/.config/i3/scripts/idle_exec
