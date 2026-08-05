@@ -40,6 +40,9 @@ menus/*
 micro/
 micro/*
 
+mpv/
+mpv/*
+
 nvim/
 nvim/*
 
@@ -62,6 +65,9 @@ scripts/
 scripts/*
 i3/scripts/
 i3/scripts/*
+
+ytfzf/
+ytfzf/*
 
 cachyos-hello.json
 QtProject.conf
