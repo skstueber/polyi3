@@ -48,9 +48,6 @@ exec_always --no-startup-id /home/skstueber/.config/i3/scripts/autotiling/autoti
 # Idle screen:
 # exec_always --no-startup-id ~/.config/i3/scripts/idle_exec
 
-# Wallpaper:
-exec feh --bg-fill /home/skstueber/Pictures/Wallpapers/hollow_knight.jpg
-
 # Can hit the workspace you're in to go to last workspace
 workspace_auto_back_and_forth yes
 
@@ -87,6 +84,9 @@ bindsym $mod+Shift+Return exec st -c "floating" ; exec --no-startup-id ~/.config
 
 # notes binding
 bindsym $mod+n exec --no-startup-id ~/.config/i3/scripts/notes.sh
+
+# sound switch
+bindsym $mod+s exec --no-startup-id ~/.config/i3/scripts/switchaudio.sh
 
 # kill process quick bind
 bindsym $mod+p exec --no-startup-id ~/.config/i3/scripts/kill.sh
