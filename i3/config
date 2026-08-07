@@ -103,6 +103,9 @@ bindsym $mod+v exec copy sel
 # clear copy history
 bindsym $mod+Shift+c exec copy clear
 
+# terminal yt
+bindsym $mod+y exec ~/.config/i3/scripts/yt.sh
+
 for_window [class="floating"] floating enable
 for_window [class="floating"] resize set 1200 700
 for_window [class="floating"] move position center
