@@ -30,6 +30,8 @@ exec --no-startup-id xset -dpms
 
 exec_always --no-startup-id setxkbmap -layout us,de -option 'grp:alt_space_toggle'
 
+# Background
+exec --no-startup-id feh --bg-fill ~/.config/i3/bloodborne3.jpg
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -104,7 +106,7 @@ bindsym $mod+v exec copy sel
 bindsym $mod+Shift+c exec copy clear
 
 # terminal yt
-bindsym $mod+y exec ~/.config/i3/scripts/yt.sh
+bindsym $mod+y exec ~/.config/i3/scripts/ytfzf-bin-i3/bin/ytfzf-menu
 
 for_window [class="floating"] floating enable
 for_window [class="floating"] resize set 1200 700
